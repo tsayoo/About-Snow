@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap');
+:root {
+    --bg-color: #ECF4D6;
+    --Second-bg-color: #8abeaf;
+    --hover-: #07459c;
+    --nav-color: #2D9596;
+    --text-color: #37a3a5;
+    --Second-text: #fff;
+    --font-text:'Roboto Condensed', sans-serif;
+    --Teks-Arab :'Readex Pro', sans-serif;
+    --H2 :'Agbalumo';
+    --Judul :'Cinzel';
+}
+*{
+  scroll-behavior: smooth;
+  font-family: var(--font-text);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #D7E9F7;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline;
+    margin-left: 15px;   
+    color: var(--text-color);
+}
+nav a:hover {
+    color: var(--hover-);
+}
+.singkat {
+    font-size: 23px;
+    padding: 60px;
+    background-color: var(--nav-color);
+    text-align: center;
+    color: white;
+}
+.singkat h1 {
+    font-size: 60px;
+    /* padding: 40px; */
+    background-color: var(--nav-color);
+    text-align: center;
+    color: white;
+    font-family: var(--Judul);
+    margin-bottom: 10px;
+}
+header {
+    display: inline;
+}
+header nav{
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 1rem;
+    z-index: 100;
+}
+main {
+    padding: 25px;
+    overflow: auto;
+    display: flex;
+}
+#content {
+    width: 75%;
+}
+.KartuInfo {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    background-color: var(--Second-bg-color);
+}
+.BeautySnow {
+  width: 45%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+span {
+  color: var(--hover-);
+}
+span:hover {
+  color: #051557;
+}
+aside {
+    width: 25%;
+    padding-left: 19px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: var(--Second-bg-color);
+    height: 180%;
+    width: 25%;
+    border-radius: 15px;
+}
+.Aside header {
+    text-align: center;
+}
+.Aside img{
+    width: 12rem;
+    border-radius: 30px;
+}
+.ContentAside h3 {
+  text-align: center;
+}
+.ContentAside th {
+  padding-right: 20px;
+}
+.ContentAside #arab {
+  font-family: var(--Teks-Arab);
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: var(--nav-color);
+    text-align: center;
+    font-weight: bold;
+}
+article {
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+#content, .Aside {
+    width: 48%;
+    padding: 0;
+  }
+.Aside img{
+    width: 100px;
+  }
+}
